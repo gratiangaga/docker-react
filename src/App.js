@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Feature
+          Github->Master->TravisCI->Test->Deploy->ElasticBeanstalk
         </p>
         <a
           className="App-link"
