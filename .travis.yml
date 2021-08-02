@@ -1,0 +1,12 @@
+sudo: require
+services:
+  - docker
+
+before_install:
+  - docker build -t gg/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true gg/docker-react npm run test -- --coverage
+
+language: generic
+
