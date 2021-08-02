@@ -10,3 +10,14 @@ script:
 
 language: generic
 
+deploy:
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "docker"
+  env: "Docker-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-615120079561"
+  backet_path: "docker"
+  on:
+    brench: master
